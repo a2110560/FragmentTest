@@ -19,9 +19,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         fragmentManager=getSupportFragmentManager();
-        f1=new F1Fragment();
-        f2=new F2Fragment();
-        f3=new F3Fragment();
+        f1Fragment=new F1Fragment();
+        f2Fragment=new F2Fragment();
+        f3Fragment=new F3Fragment();
 
         FragmentTransaction transaction=fragmentManager.beginTransaction();//會開始交易行為(fragment切換)
         transaction.add(R.id.container,f1Fragment);//將f1fragment放入container
